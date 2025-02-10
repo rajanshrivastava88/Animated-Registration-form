@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "poppins";
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     background: #0c1022;
     justify-content: center;
@@ -15,7 +15,8 @@ body{
     min-height: 100vh;
     overflow: hidden;
 }
-.container{
+
+.container {
     position: relative;
     width: 350px;
     height: 500px;
@@ -27,61 +28,65 @@ body{
     padding-inline: 32px;
     overflow: hidden;
 }
-.container::before{
+
+.container::before {
     content: "";
     position: absolute;
     height: 650px;
     width: 650px;
-    background: conic-gradient(
-        transparent, transparent, transparent, #027116, #021670
-    );
+    background: conic-gradient(transparent, transparent, transparent, #027116, #021670);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
 }
-.container::after{
+
+.container::after {
     content: "";
     position: absolute;
     height: 650px;
     width: 650px;
-    background: conic-gradient(
-        transparent, transparent, transparent, #dde0de, #f00404
-    );
+    background: conic-gradient(transparent, transparent, transparent, #dde0de, #f00404);
     animation: animate 4s linear infinite;
 }
-@keyframes animate{
-    0%{
+
+@keyframes animate {
+    0% {
         transform: rotate(0);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
-.image{
+
+.image {
     position: absolute;
     inset: 5px;
     background-color: #0c1022;
     z-index: 1;
     border-radius: 16px;
 }
-.form-box{
+
+.form-box {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 60vh;
 }
-.form-box .form h2{
+
+.form-box .form h2 {
     font-size: 32px;
     color: #fff;
     text-align: center;
 }
-.form .input-box{
+
+.form .input-box {
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #fff;
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
     height: 50px;
     background: transparent;
@@ -91,11 +96,13 @@ body{
     padding: 0 35px 0 5px;
     color: #fff;
 }
-input:focus ~ label,
-input:valid ~ label{
+
+input:focus~label,
+input:valid~label {
     top: -5px;
 }
-.input-box label{
+
+.input-box label {
     position: absolute;
     color: #fff;
     top: 50%;
@@ -105,19 +112,22 @@ input:valid ~ label{
     pointer-events: none;
     transition: .3s;
 }
-.group{
+
+.group {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
 }
-.group a{
+
+.group a {
     position: relative;
     top: -25px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
-button{
+
+button {
     height: 40px;
     width: 100px;
     font-size: 15px;
@@ -127,7 +137,8 @@ button{
     border: none;
     border-radius: 5px;
 }
-button:focus{
+
+button:focus {
     color: #fff;
     background-color: #0c1022;
     border: 2px solid #fff;
