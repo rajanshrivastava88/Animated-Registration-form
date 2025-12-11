@@ -34,7 +34,8 @@ body {
     position: absolute;
     height: 650px;
     width: 650px;
-    background: conic-gradient(transparent, transparent, transparent, #027116, #021670);
+    background: conic-gradient(transparent, transparent, 
+    transparent, #027116, #021670);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
 }
@@ -44,7 +45,8 @@ body {
     position: absolute;
     height: 650px;
     width: 650px;
-    background: conic-gradient(transparent, transparent, transparent, #dde0de, #f00404);
+    background: conic-gradient(transparent, transparent, 
+    transparent, #dde0de, #f00404);
     animation: animate 4s linear infinite;
 }
 
